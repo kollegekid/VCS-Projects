@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel = "icon" href = "icons/favicon.ico"   type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <img src="https://vitaecura.com/assets/img/logo.png" alt="">
+              <a class="navbar-brand"  id = "jk" href="#">Vitaecura</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0 " style="margin-left: auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="buy.html">Buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://schoolerp.vitaecura.com/">Erp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                
+                
+              
+            </div>
+          </nav>
+    </header>
+    <!-- <input id="inputt" type="text" placeholder="No. of Students"> -->
+
+    <div class="container">
+        <div class=" az " style="margin-top: 7%">
+            <div class="imgcontainer">
+                <h1 id="jk">AppChalk</h1>
+            </div>
+            <!-- first_row -->
+            <div class="row a1">
+                <div class="col-lg-3">
+                    <label>Basic</label>
+                </div>
+                <div class="col-lg-3">
+                    <p>10/- Monthly per Student</p>
+                </div>
+                <div class="col-lg-3">
+                    <input class="inputt" id="i1" type="text"  placeholder="No. of Students">
+                </div>
+                <div class="col-lg-3">
+                    <button onclick="f1()" id="b1" class="btd">Buy</button>
+                </div>
+            </div>
+            <!-- second_row -->
+            <div class="row a1">
+                <div class="col-lg-3">
+                    <label>Ultimate</label>
+                </div>
+                <div class="col-lg-3">
+                    <p>15/- Monthly per Student</p>
+                </div>
+                <div class="col-lg-3">
+                    <input id="i2" class="inputt" type="text"  placeholder="No. of Students">
+                </div>
+                <div class="col-lg-3">
+                    <button onclick="f2()" id = "b2" class="btd">Buy</button>
+                </div>
+            </div>
+            <!-- third_row -->
+            <div class="row a1">
+                <div class="col-lg-3">
+                    <label>Enterprise</label>
+                </div>
+                <div class="col-lg-3">
+                    <p>20/- Monthly per Student</p>
+                </div>
+                <div class="col-lg-3">
+                    <input class="inputt" id="i3" type="text"  placeholder="No. of Students">
+                </div>
+                <div class="col-lg-3">
+                    <button onclick="f3()" id="b3" class="btd">Buy</button>
+                </div>
+            </div>
+            <!-- fourth_row -->
+            <div class="row a1">
+                <input class = "col-lg-6" id="cname" type="text" placeholder="Apply Coupon">
+                <div class="col-lg-3">
+                    <button class="btd" onclick="applied()" id="apply">Apply</button>
+                </div>
+                <div class="col-lg-3">
+                    <button class="btd" onclick="reset()" >Reset</button>
+                </div>
+            </div>
+            <!-- Fifth_row -->
+            <div class="row a1">
+                <div class="col-lg-3">
+                    <label>Total Cost  &nbsp; = </label>
+                </div>
+                <div class="col-lg-6">
+                    <p id="totalcost">0/- INR</p>
+                </div>
+                <div class="col-lg-3">
+                    <button class="btd">Proceed</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="vcsscript.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
