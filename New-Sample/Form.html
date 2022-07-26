@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                padding-top: 4px;
+                /* background-color: beige; */
+                
+            }
+            label{
+                font-family: "Nunito", sans-serif;
+                color: #2566b6;
+                font-weight: bold;
+            }
+            body{
+                background-color: beige;
+            }
+            .cn {
+                display: inline-block;
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                
+            }            
+            .ab{
+                background-color: azure;
+                padding: 1.5%;
+                border: 1px solid slategray;
+                border-radius: 3%;
+            }
+            .subb{
+                margin-top: 10px;
+            }
+            .head{
+                font-family: "Nunito", sans-serif;
+                font-weight: bold;
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+
+                    <form class="form-group ab" >
+                        <div class="head">
+                           Registration Form 
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label> First Name :- </label>
+                                <input type="text" id="fname" class="form-control" placeholder="Enter Name.....">
+                            </div>
+                            <div class="col-lg-6">
+                                <label> Last Name :- </label>
+                                <input type="text" id="fname" class="form-control" placeholder="Enter Name.....">
+                            </div>
+    
+                            
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label> Password </label>
+                                <input type="password" id="fname" class="form-control" placeholder="Enter Password.....">
+                            </div>
+                            <div class="col-lg-6">
+                                <label> E-mail </label>
+                                <input type="email" id="fname" class="form-control" placeholder="Enter mail address.....">
+                            </div>    
+                            
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label> Gender </label><br>
+                                <!-- <input type="radio" class="custom-control-input" >
+                                <label class="custom-control-label" >Male &nbsp; &nbsp;</label>
+                                <input type="radio" class="custom-control-input">
+                                <label class="custom-control-label">Female</label> -->
+                                <label class="cn">
+                                    <input type="radio" name="radio">
+                                    <span class="check"></span>Male
+                                  </label>
+                                  <label class="cn">
+                                    <input type="radio" name="radio">
+                                    <span class="check"></span>Female
+                                  </label>
+                            </div>
+                            <div class="col-lg-6">
+                                <label> Contact </label>
+                                <input type="text" id="fname" class="form-control" placeholder="Enter Number.....">
+                            </div>    
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label> City </label><br>
+                                
+                                    <select class="form-control">
+                                      <option value="0">Enter City</option>
+                                      <option value="1">Indore</option>
+                                      <option value="2">Dewas</option>
+                                      <option value="3">Other</option>
+                                    </select>
+                                  
+                            </div>
+                            <div class="col-lg-6">
+                                <label> State </label>
+                                <input type="text" id="fname" class="form-control" placeholder="Enter State.....">
+                            </div>    
+                            
+                        </div>
+
+                        <!-- <label >E-mail Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="abc@xyz.com"> -->
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label> Address </label>
+                                <input type="text" id="password" class="form-control" placeholder="Enter Address.....">
+                            </div>
+                            
+                            
+                        </div>
+
+
+                        
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <label class="container"><input type="checkbox" checked="unchecked"> I agree that the information provided is true.
+                                </label>
+                            </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="subb btn btn-primary btn-block btn-lg">Submit</button>
+                        </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+        
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Portal | Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+        body{
+            
+            font-size: 1rem;
+            background-color: #ccd0f9;
+            
+            background-size: cover;
+        }
+ label{
+  font-family: "Nunito", sans-serif;
+  color: #2566b6
+ }
+ form{
+  box-shadow: 10px 3px rgba(72, 70, 70, 0.1);
+ }
+
+/* Full-width inputs */ 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #859dfd;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin: 4px 0;
+  border: 1px solid rgba(22, 15, 97, 0.925);
+  border-radius: 3%;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  
+  color: #052956;
+  border-color: rgb(3, 120, 30);
+  
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 5px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 15px 0 12px 0;
+
+}
+
+/* Avatar image */
+img.avatar {
+  width: 30%;
+  border-radius: 10%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.hvr:hover{
+  border-color: #2566b6;
+  transition: 0.5s ease;
+}
+
+
+.xy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  /* border-radius: 10%; */
+  /* border: 2px dotted rgb(33, 42, 18); */
+  background-color: rgb(215, 237, 245);
+  border: 3px solid #a1a8f5;
+  border-radius: 3%;
+  /* height: 30%; */
+  transform: translate(-50%, -50%);
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  img.avatar {
+  width: 90%;
+  border-radius: 5%;
+  padding: 5px;
+  }
+}
+    </style>
+</head>
+
+
+
+<body>
+
+  
+    <div class="xy">
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              <img src="favicon.ico" alt="job-icon" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Admin Username</b></label>
+              <input type="text" class="hvr"  placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input class="hvr" type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container ab" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn"><p>Cancel</p></button>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+          </form>
+    </div>
+
+</body>
+</html>
